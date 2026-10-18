@@ -3,7 +3,7 @@
 Stickify is a full-stack e-commerce web application built with a **React** frontend and a **Java / Spring Boot** backend. It supports secure authentication, role-based access control, product browsing with search and sorting, a persistent shopping cart, and Stripe-powered checkout — all containerized with Docker for easy deployment.
 
 **🔗 Live Demo:**
-https://production.d3qiabk3snbdey.amplifyapp.com/
+https://stickify-lyart-alpha.vercel.app
 
 <!-- Example once you have it:
 **🔗 Live Demo:**
@@ -42,21 +42,25 @@ ORDERS <img width="1900" height="862" alt="orders" src="https://github.com/user-
 ## 🧰 Tech Stack
 
 **Frontend**
+
 - React
-- Redux Toolkit 
+- Redux Toolkit
 - React Router
 - Tailwind CSS
 - Font Awesome
 
 **Backend**
+
 - Java, Spring Boot
-- Spring Security 
+- Spring Security
 - MySQL
 
 **Payments**
+
 - Stripe API
 
 **DevOps**
+
 - Docker / Docker Compose
 
 ---
@@ -104,5 +108,6 @@ stickify/
 ## 👤 Author
 
 **Jeel**
+
 - GitHub: https://github.com/jeel101
 - LinkedIn: www.linkedin.com/in/jeel-shah-07a6b9246
