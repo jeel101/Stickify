@@ -81,7 +81,7 @@ public class EazyStoreSecurityConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration config = new CorsConfiguration();
-        config.setAllowedOrigins(Arrays.asList(allowedOrigins.split(",")));
+        config.setAllowedOrigins(Arrays.asList( allowedOrigins.split(",")));
         config.setAllowedMethods(Collections.singletonList("*"));
         config.setAllowedHeaders(Arrays.asList("*"));
         config.setAllowCredentials(true);
