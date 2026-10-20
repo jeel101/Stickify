@@ -58,9 +58,9 @@ public class EazyStoreSecurityConfig {
                             "/v3/api-docs/**").hasAnyRole("DEV_ENG","QA_ENG");
                     requests.anyRequest().hasAnyRole("USER", "ADMIN");
                 })
-                .addFilterBefore(new JWTTokenValidatorFilter(publicPaths), BasicAuthenticationFilter.class)
-                .formLogin(withDefaults())      //This enables form-based login authentication.
-                .httpBasic(withDefaults()).build(); //This enables HTTP Basic Authentication.
+                .addFilterBefore(new JWTTokenValidatorFilter(publicPaths), BasicAuthenticationFilter.class).build();
+//                .formLogin(withDefaults())      //This enables form-based login authentication.
+//                .httpBasic(withDefaults()).build(); //This enables HTTP Basic Authentication.
     }
 
     @Bean
