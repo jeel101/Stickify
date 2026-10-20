@@ -12,6 +12,9 @@ public class PublicPathConfig {
         return List.of("/api/v1/products/**",
                 "/api/v1/contacts/**",
                 "/api/v1/auth/**",
+                "/auth/**",
+                "/register",
+                "/login",
                 "/error",
                 "/api/v1/csrf-token",
                 "/eazystore/actuator/health/**");
