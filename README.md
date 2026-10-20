@@ -5,10 +5,16 @@ Stickify is a full-stack e-commerce web application built with a **React** front
 **🔗 Live Demo:**
 https://stickify-lyart-alpha.vercel.app
 
-<!-- Example once you have it:
-**🔗 Live Demo:**
-[https://stickify.yourdomain.com](https://stickify.yourdomain.com)
--->
+### ⚠️ Performance & Render Cold Starts
+
+The backend service is hosted on **Render's Free Tier**, which automatically spins down the web service after a period of inactivity.
+
+- **Initial Load / Cold Start:** On the first request after inactivity, the JVM and Spring Boot application can take **2 to 10+ minutes** to perform a cold boot and initialize database connections.
+- **Subsequent Requests:** Once awake, all API endpoints (authentication, products, contacts) respond instantly with typical low latency.
+- **Status Check:** You can verify backend readiness directly via the health endpoint:
+  ```http
+  GET [https://stickify-2be3.onrender.com/eazystore/actuator/health](https://stickify-2be3.onrender.com/eazystore/actuator/health)
+  ```
 
 ---
 
